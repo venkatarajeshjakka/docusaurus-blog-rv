@@ -70,3 +70,21 @@ bool k = true;
 bool a = x && y;
 bool b = x || y;
 ```
+
+## Conditional statements
+
+- if
+
+- switch
+
+## Loops
+
+- Loops with initital test
+
+```csharp
+
+while(condition){}
+
+```
+
+- Loops with final test
