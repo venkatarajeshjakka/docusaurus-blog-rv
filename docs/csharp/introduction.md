@@ -88,3 +88,34 @@ while(condition){}
 ```
 
 - Loops with final test
+
+```csharp
+
+do{} while(condition)
+
+```
+
+- For loop
+
+```csharp
+for(int i=0; i<10: i++)
+{
+ //some code
+}
+```
+
+- Foreach
+
+```csharp
+foreach(var elemenet in listOfElement){
+
+}
+```
+
+### How to use loops
+
+- When you are going through a list, you should use a foreach loop
+- If you need the **numeric index** => use a `for` loop
+- If it's just a procedural construction => use a `while` loop
+- When you need **indexing** to go through a list in a special way or if you need to modify the list when in the loop => use `for` lopp
+- Almost never use `do while` loops
