@@ -23,6 +23,8 @@ Create `Car` class
 ```csharp
     public class Car
     {
+        private string _manufacturer = "Ford"; //Fields
+
         public Car(string color, int year, int numberOfDoors)
         {
             Color = color;
@@ -39,6 +41,11 @@ Create `Car` class
         public int Year { get; set; }
 
         public int NumberOfDoors { get; set; }
+
+        public string GetManufacturer() //Methods
+        {
+            return _manufacturer;
+        }
 
     }
 ```
