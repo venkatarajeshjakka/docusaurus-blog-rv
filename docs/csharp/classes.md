@@ -136,3 +136,71 @@ public class MyClass
 MyClass obj1 = new MyClass();
 obj1.MyInstanceMethod(); // Prints 10
 ```
+
+## Reference types and value types
+
+### Reference types
+
+A reference type is a type which has as its value a reference to the appropriate data rather than the data itself.
+
+Common reference types in C# include:
+
+- `string`
+- `class` (user-defined reference types)
+- `Arrays` (e.g., `int[]`, `string[]`)
+- delegates
+- Collections and containers (e.g., `List<T>`, `Dictionary<TKey, TValue>`)
+- Interfaces
+
+```csharp
+static void Main(string[] args)
+{
+    StringBuilder str = new();
+    str.Append("Hello");
+
+    StringBuilder str1 = str;
+    str.Append(" world!");
+
+    Console.WriteLine(str);
+    Console.WriteLine(str1); // Prints Hello world!, as both variables refer to the same StringBuilder
+
+    Console.ReadLine();
+}
+
+```
+
+### Value types
+
+Variables of a value type directly contain the data. Assignment if a value type involves the actual data being copied.
+
+Some common value types in C# include:
+
+- `int`
+- `float`
+- `char`
+- `bool`
+- `struct` (user-defined value types)
+
+Create a `struct`
+
+```csharp
+struct IntContainer
+{
+    public int i;
+}
+```
+
+When you assign a value type variable to another variable or pass it as a parameter to a method, a copy of the data is created, and modifications to one variable do not affect the other.
+
+```csharp
+static void Main(string[] args)
+{
+    IntContainer first = new();
+    first.i = 5;
+    IntContainer second = first;
+    second.i = 10;
+    Console.WriteLine(first.i); //Print 5
+    Console.WriteLine(second.i); //Print 10
+    Console.ReadLine();
+}
+```
