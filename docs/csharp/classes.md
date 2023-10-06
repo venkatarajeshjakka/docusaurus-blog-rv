@@ -213,6 +213,18 @@ Boxing is the process of converting a value type to the type `object` (reference
 
 Boxing a value type allocates an object instance on the heal and copies the value into the new object.
 
+```csharp
+ static void Main(string[] args)
+{
+
+    //Boxing
+    int i = 123;
+    object o = i;
+    Console.WriteLine(o); //Print 123
+    Console.ReadLine();
+}
+```
+
 ### Unboxing
 
 Unboxing is an explicit conversion from the type `object` to the value type
@@ -222,6 +234,23 @@ An unboxing operation consists of two steps:
 - Checking the object instance to make sure that it is a boxed value of the given value type
 - Copying the value from the instance into the value-type variable
 
+```csharp
+static void Main(string[] args)
+{
+
+    //Boxing
+    int i = 123;
+    object o = i;
+    Console.WriteLine(o); //Print 123
+
+    //unboxing
+    int j = (int)o;
+    Console.WriteLine(j); //Print 123
+    Console.ReadLine();
+
+}
+```
+
 ### Type Conversions
 
 After a variable is declared, it cannot be declared again or assigned a value of another type unless that type is implicitly convertible to the variable's type
@@ -229,6 +258,32 @@ After a variable is declared, it cannot be declared again or assigned a value of
 For example, a `string` cannot be implicitly converted to `int`.Therefore, after you declare a variable `i` as an `int`, you cannot assign a `string` to it.
 
 - **Implict conversions**: No Special syntax is required because the conversion is type safe and no data will be lost. Example include conversion from smaller to larger integer types.
+
+```csharp
+static void Main(string[] args)
+{
+
+    //Implicit conversion
+    int a = 123456;
+    long b = a;
+    Console.WriteLine(b); //Print 123456
+
+}
+```
+
 - **Explicit conversions**: Explicit conversions require a cast operator. Casting is required when information might be lost in the conversion, or when the conversion might not succeed for other reasons. Typical example include numeric conversion to a type that has less precision or a smaller range.
+
+```csharp
+static void Main(string[] args)
+{
+
+    //Explicit conversion
+    double a = 10.45;
+    int b = (int)a;
+    Console.WriteLine(b); //Print 10
+
+}
+```
+
 - **User-defined conversions**: User-defined conversions are performed by special methods that you can define to enable explicit and implicit conversions between custom types.
 - **Conversion with helper classes**: To convert between non-compatiable types, such as integers and `System.DateTime` objects, or hexadecimal string and byte arrays, you use the `System.BitConverter` class, the `System.Convert` class, and the Parse methods of the built-in numeric types.
