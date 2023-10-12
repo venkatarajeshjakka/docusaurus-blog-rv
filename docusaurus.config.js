@@ -74,7 +74,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Technical Doc',
+            label: 'Handbook',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
@@ -127,7 +127,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} too-slow, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Infinity, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
