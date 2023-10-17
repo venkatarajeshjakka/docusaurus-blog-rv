@@ -63,6 +63,14 @@ Create `object` of `car` class
         }
     }
 ```
+## Method
+
+A method is a code block that contains a series of statements. A Program causes the statements to be executed by calling the method and specifying any required method arguments.
+
+In C#, every executed instruction is performed in the context of a method.
+
+The Main method is the entry point and it is called by the common language runtime (CLR) when the program is started.
+
 
 ## Static Vs Non-Static
 
