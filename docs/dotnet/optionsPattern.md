@@ -58,6 +58,15 @@ When using the options pattern, an options class:
 - Must be non-abstract with a public parameterless constructor
 - Contain public read-write properties to bind (fields are not bound)
 
+## Setting Up Options Pattern Using IConfigureOptions
+
+`IConfigureOptions` interface to define a class to configure our strongly typed options.
+
+There are two steps that we need to follow in this case:
+
+- Create the `IConfigureOptions` implementation
+- Call `IServiceCollection.ConfigureOptions<TOptions>` with our `IConfigureOptions` implementation as the generic argument
+
 The following code is part of the `DatabaseOptionsSetup.cs` C# file and:
 
 Calls `ConfigurationBinder.Bind` to bind the `DatabaseOptions` class to the **DatabaseOptions** section.
@@ -79,6 +88,8 @@ public class DatabaseOptionsSetup : IConfigureOptions<DatabaseOptions>
     }
 }
 ```
+
+We now have access to dependency injection in the `DatabaseOptionsSetup` class. This means that we can resolve other services that we can use to get the configuration values.
 
 Configure Options in `program.cs`
 

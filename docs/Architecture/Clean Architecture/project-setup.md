@@ -18,7 +18,7 @@ Each of the layers is typically one project in your solution.
 
 Here's a visual representation of the Clean Architecture:
 
-![Clean Architecture Diagram](./img/architecture-diagram.png)
+![Clean Architecture Diagram](./img/cleanarchitecture.png)
 
 ## Domain Layer
 
