@@ -58,6 +58,48 @@ When using the options pattern, an options class:
 - Must be non-abstract with a public parameterless constructor
 - Contain public read-write properties to bind (fields are not bound)
 
+## Setting Up Options Pattern Using IConfiguration
+
+### Creating The Options Class
+
+Create the `JwtSettings` class to hold that configuration
+
+```csharp
+public class JwtSettings
+{
+    public string Secret { get; init; } = null!;
+
+    public int ExpiryMinutes { get; init; }
+
+    public string Issuer { get; init; } = null!;
+
+    public string Audience { get; init; } = null!;
+}
+```
+
+Inside of appsettings.json file we have the following configuration values
+
+```json
+"JwtSetting": {
+    "Secret": "super-secret-key",
+    "ExpiryMinutes": 20,
+    "Issuer": "BuberDinner",
+    "Audience": "BuberDinner"
+  }
+```
+
+### Setting Up Options Pattern Using IConfiguration
+
+Use the `IConfiguration` instance that we can access while registering services.
+
+We need to call the `IServiceCollection.Configure<TOptions>` method, and specify the `JwtSettings` as the generic argument:
+
+```csharp
+
+ services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
+
+```
+
 ## Setting Up Options Pattern Using IConfigureOptions
 
 `IConfigureOptions` interface to define a class to configure our strongly typed options.
@@ -119,3 +161,21 @@ builder.Services.AddDbContext<DatabaseContext>((serviceProvider, options) =>
 
 });
 ```
+
+## Injecting Options With IOptions
+
+Inject `IOptions<JwtSettings>` from the constructor.
+
+```csharp
+private readonly JwtSettings _jwtSettings;
+public JwtTokenGenerator(IDateTimeProvider dateTimeProvider,
+    IOptions<JwtSettings> jwtSettings)
+{
+   _dateTimeProvider = dateTimeProvider;
+  _jwtSettings = jwtSettings.Value;
+}
+```
+
+The actual `JwtSettings` instance is available on the `IOptions<JwtSettings>.Value` property.
+
+The `IOptions` instance that we injected here is configured as a Singleton in dependency injection.

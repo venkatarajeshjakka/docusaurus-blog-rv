@@ -42,3 +42,9 @@ dotnet add ./BuberDinner.Api/ reference ./BuberDinner.Contracts/ ./BuberDinner.A
 ```csharp
 dotnet run --project ./BuberDinner.Api/
 ```
+
+Run using `https` profile
+
+```csharp
+dotnet run --project ./BuberDinner.Api/ --launch-profile https
+```
