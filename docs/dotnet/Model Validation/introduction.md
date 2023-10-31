@@ -206,3 +206,11 @@ public static class DateTimeValidators
 ### Custom message placeholders
 
 Overload of Must that we’re using now accepts 3 parameters: the `root` (parent) object, the property `value` itself, and the `context`. We use the context to add a custom message replacement value of **"Sunrise"** and set its value to the sunrise. We can now use this placeholder as `{Sunrise}` within the call to `WithMessage`.
+
+### Register Validators
+
+To automatically register all validators from an assembly, you need to call the AddValidatorsFromAssembly method:
+
+```csharp
+services.AddValidatorsFromAssemblyContaining<IAssemblyMarker>();
+```
