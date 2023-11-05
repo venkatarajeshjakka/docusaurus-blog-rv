@@ -5,71 +5,23 @@ sidebar_label: "Domain Driven Design"
 sidebar_position: 2
 ---
 
-## Entity
+Domain-Driven Design (DDD) is a powerful approach to developing software that puts the focus on understanding and modeling the problem domain, leading to more maintainable, robust, and expressive code.
 
-An object primarily defined by its identity is called an **Entity**
+## Understanding DDD
 
-```csharp
-public abstract class Entity : IEquatable<Entity>
-{
-    protected Entity(Guid id)
-    {
-        Id = id;
-    }
+Domain-Driven Design is an approach to software development that focuses on the domain, the problem you are trying to solve, rather than the technical aspects of the system. It encourages collaboration between domain experts and developers to create a shared understanding of the domain.
 
-    public Guid Id { get; private init; }
+## Building Blocks of DDD
 
-    public static bool operator ==(Entity? first, Entity? second)
-    {
-        return first is not null && second is not null && first.Equals(second);
+In Domain-Driven Design (DDD), aggregates, entities, and value objects are fundamental concepts used to model the domain of your application. These concepts help you create a rich, expressive, and maintainable domain model.
 
-    }
+### Entity
 
-    public static bool operator !=(Entity? first, Entity? second)
-    {
-        return !(first == second);
-    }
-    public override bool Equals(object? obj)
-    {
-        if (obj is null)
-        {
-            return false;
-        }
-        if (obj.GetType() != GetType())
-        {
-            return false;
-        }
+An object primarily defined by its identity is called an **Entity**.
 
-        if (obj is not Entity entity)
-        {
-            return false;
-        }
+Entities are objects with a distinct identity and mutable state. They are the core building blocks of your domain model and are often part of aggregates.
 
-        return entity.Id == Id;
-    }
-
-    public bool Equals(Entity? other)
-    {
-        if (other is null)
-        {
-            return false;
-        }
-        if (other.GetType() != GetType())
-        {
-            return false;
-        }
-
-        return other.Id == Id;
-    }
-
-    public override int GetHashCode()
-    {
-        return Id.GetHashCode() * 41;
-    }
-}
-```
-
-### init
+#### init
 
 The `init` keyword defines an accessor method in a property. An init-only setter assigns a value to the property only during object construction. This enforces immutability, so that once the object is initialized, it can't be changed again.
 
@@ -84,3 +36,23 @@ public abstract class Entity
     public Guid Id { get; init; }
 }
 ```
+
+### Aggregates
+
+Aggregates are clusters of related domain objects that are treated as a single unit. They ensure consistency and transactionality within a specific part of the domain.
+
+#### Aggregate Rules
+
+- Reference other aggregates by id
+- Changes are commited and rolled back as a whole
+- Changes to an aggregate are done via the root
+
+#### Aggregate modeling steps
+
+- Define each of the entities is an aggregate
+- Merge aggregates to enforce invariants
+- Merge aggregates that cannot tolerate eventual consistancy
+
+### Value objects
+
+Value objects represent attributes or properties of domain objects and have no identity. They are immutable and help ensure strong typing and encapsulation.
