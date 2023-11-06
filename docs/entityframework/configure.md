@@ -2,7 +2,7 @@
 title: Configure Entity Framework Core
 description: Configure Entity Framework Core
 sidebar_label: "Configure Entity Framework Core"
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ### Enable Detailed Logging
