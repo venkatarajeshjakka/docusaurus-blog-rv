@@ -2,7 +2,7 @@
 title: Optimize database update
 description: Optimize database update using EF Core, SQL & Dapper
 sidebar_label: "Optimize database update"
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 Create `Employee` & `Company` class
@@ -81,24 +81,6 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Database"));
 
 });
-```
-
-### Create your first migration
-
-Instruct EF Core to create a migration named **InitialCreate**
-
-```csharp
-Add-Migration InitialCreate
-```
-
-### Create your database and schema
-
-EF create your database and create your schema from the migration
-
-## Updating in Database
-
-```csharp
-Update-Database
 ```
 
 ### EF update approach

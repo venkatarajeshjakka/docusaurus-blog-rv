@@ -17,8 +17,7 @@ EF Core can serve as an object-relational mapper (O/RM), which:
 EF Core is shipped as NuGet packages. To add EF Core to an application, install the NuGet package for the database provider you want to use.
 
 ```csharp
-Microsoft.EntityFrameworkCore.SqlServer
-Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 ```
 
 ## The model
@@ -30,3 +29,36 @@ EF supports the following model development approaches:
 - Generate a model from an existing database.
 - Hand code a model to match the database.
 - Once a model is created, use EF Migrations to create a database from the model. Migrations allow evolving the database as the model changes.
+
+```csharp
+public class BuberBreakfastDbContext : DbContext
+{
+    public BuberBreakfastDbContext(DbContextOptions<BuberBreakfastDbContext> options)
+        : base(options)
+    {
+
+    }
+
+    public DbSet<Breakfast> Breakfasts { get; set; } = null!;
+}
+```
+
+Services such as the `BuberBreakfastDbContext` are registered with dependency injection during app startup in `program.cs`.
+
+```csharp
+
+builder.Services.AddDbContext<BuberBreakfastDbContext>(options =>
+        options.UseSqlite(builder.Configuration.GetConnectionString("BuberBreakfastContext")));
+
+```
+
+## Create the database
+
+The following steps use migrations to create a database.
+
+```csharp
+dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+```
