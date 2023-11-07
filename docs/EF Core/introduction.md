@@ -1,7 +1,7 @@
 ---
 title: Getting Started with EF Core
 description: Getting Started with EF Core
-sidebar_label: "EF Core Overview"
+sidebar_label: "Overview"
 sidebar_position: 1
 ---
 
