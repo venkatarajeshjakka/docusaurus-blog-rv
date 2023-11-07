@@ -1,8 +1,8 @@
 ---
 title: Domain Driven Design in Clean Architecture
 description: Project Setup using Clean Architecture CQRS using MediatR
-sidebar_label: "Domain Driven Design"
-sidebar_position: 2
+sidebar_label: "Overview"
+sidebar_position: 1
 ---
 
 Domain-Driven Design (DDD) is a powerful approach to developing software that puts the focus on understanding and modeling the problem domain, leading to more maintainable, robust, and expressive code.

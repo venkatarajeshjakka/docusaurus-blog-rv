@@ -2,7 +2,7 @@
 title: Entity in Domain Driven Design
 description: Entity in Domain Driven Design
 sidebar_label: "Entity"
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 In **Domain-Driven Design (DDD)**, an entity is a key building block used to model and represent domain objects with distinct identities and lifecycles. Entities are fundamental to the design of a domain model, and they typically represent real-world objects, concepts, or entities with a unique identity. Entities are often mutable, meaning they can change their state over time while preserving their identity.
