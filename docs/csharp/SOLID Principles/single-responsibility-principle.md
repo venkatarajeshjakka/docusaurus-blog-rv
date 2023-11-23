@@ -1,6 +1,6 @@
 ---
 title: Single responsibility principle
-description: Single responsibility principle
+description: Single responsibility principle using C#
 sidebar_label: "Single responsibility principle"
 sidebar_position: 1
 ---
