@@ -2,8 +2,10 @@
 title: Value Objects in Domain Driven Design
 description: Value Objects in Domain Driven Design
 sidebar_label: "Value Objects"
-sidebar_position: 3
+sidebar_position: 2
 ---
+
+Value Objects defined only by its values.
 
 There are two main characteristics for value objects:
 

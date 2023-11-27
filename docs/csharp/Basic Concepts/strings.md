@@ -2,7 +2,7 @@
 title: String in C#
 description: C# Basic concepts | Strings
 sidebar_label: "Strings in C#"
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 `Strings` are a reference type but behave similar to value types.

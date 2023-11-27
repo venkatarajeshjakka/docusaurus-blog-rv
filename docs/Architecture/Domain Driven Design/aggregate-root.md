@@ -2,7 +2,7 @@
 title: Aggregate Root in Domain Driven Design
 description: Aggregate Root in Domain Driven Design
 sidebar_label: "Aggregate Root"
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 In **Domain-Driven Design (DDD)**, an Aggregate Root is an important concept used to define the boundary of a consistency boundary within the domain model. Aggregates are a collection of related domain entities and value objects that are treated as a single unit. The Aggregate Root is the entry point to the aggregate and serves as the only object that external clients can directly reference. It is responsible for ensuring the consistency and integrity of the entire aggregate.

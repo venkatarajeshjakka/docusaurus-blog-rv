@@ -2,7 +2,7 @@
 title: Inheritance & access modifiers in C#
 description: C# Basic concepts | Classes
 sidebar_label: "Inheritance in C#"
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 ## Inheritance
@@ -29,6 +29,30 @@ Access modifiers are keywords used to specify the declared accessibility of a me
 - **private protected**: Access is limited to the containing class or types derived from the containing class with the current assembly.
 
 ## Polymorphism
+
+You can use polymorphism if you want to have multiple forms of one or more methods of a class with the same name.
+
+In C#, polymorphism can be achieved in two ways:
+
+1. Compile-time Polymorphism
+2. Run-time Polymorphism
+
+### Method Overloading
+
+Compile-time polymorphism is also known as method overloading. C# allows us to define more than one method with the same name but with different signatures. This is called method overloading.
+
+```csharp
+class Printer
+{
+    public void Print(string str){
+        Console.WriteLine(str);
+    }
+
+    public void Print(int a){
+        Console.WriteLine($"Integer {a}");
+    }
+}
+```
 
 ### Method Overriding
 
@@ -61,3 +85,5 @@ public class Square : Shape
 }
 
 ```
+
+Use the `virtual` keyword with a member of the base class to make it overridable, and use the `override` keyword in the derived class to indicate that this member of the base class is being redefined in the derived class

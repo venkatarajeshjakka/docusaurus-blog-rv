@@ -2,7 +2,7 @@
 title: Collections  in C#
 description: C# Basic concepts | Collections
 sidebar_label: "Collections in C#"
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 ## Collections

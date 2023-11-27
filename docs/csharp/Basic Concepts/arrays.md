@@ -2,7 +2,7 @@
 title: Arrays in C#
 description: C# Basic concepts | Arrays
 sidebar_label: "Arrays in C#"
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 An `array` is a sequence of elements
