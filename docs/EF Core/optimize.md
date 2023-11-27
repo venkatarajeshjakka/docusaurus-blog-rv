@@ -2,7 +2,7 @@
 title: Optimize database update
 description: Optimize database update using EF Core, SQL & Dapper
 sidebar_label: "Optimize database update"
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 Create `Employee` & `Company` class
