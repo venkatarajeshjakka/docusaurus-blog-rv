@@ -13,6 +13,8 @@ Any method from any accessible class or struct that matches the delegate type ca
 
 This ability to refer to a method as a parameter makes delegates ideal for defining callback methods.
 
+Delegates are commonly used to implement events and call back methods. All delegates are derived implicitly from the System.
+
 ### Static Method
 
 ```csharp
