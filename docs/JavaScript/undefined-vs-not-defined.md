@@ -2,7 +2,7 @@
 title: undefined vs not defined
 description: undefined vs not defined in Javascript
 sidebar_label: "Undefined vs Not Defined"
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Undefined:
