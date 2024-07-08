@@ -211,7 +211,7 @@ static void Main(string[] args)
 
 Boxing is the process of converting a value type to the type `object` (reference type).
 
-Boxing a value type allocates an object instance on the heal and copies the value into the new object.
+Boxing a value type allocates an object instance on the heap and copies the value into the new object.
 
 ```csharp
  static void Main(string[] args)
