@@ -2,7 +2,7 @@
 title: Array Operations
 description: A Deep Dive into Array Operations in Javascript
 sidebar_label: "Array Operations"
-sidebar_position: 13
+sidebar_position: 14
 ---
 
 ## Array `map()` Function: Transforming Elements

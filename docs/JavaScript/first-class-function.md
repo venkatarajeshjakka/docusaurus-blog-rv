@@ -2,7 +2,7 @@
 title: First Class Funcion
 description: A Deep Dive into First Class Function in Javascript
 sidebar_label: "First Class Funcion"
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 # Mastering Functions in JavaScript

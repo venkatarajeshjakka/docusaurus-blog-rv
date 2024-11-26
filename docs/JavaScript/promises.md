@@ -2,7 +2,7 @@
 title: Promises
 description: A Deep Dive into Promises in Javascript
 sidebar_label: "Promises"
-sidebar_position: 15
+sidebar_position: 16
 ---
 
 The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.

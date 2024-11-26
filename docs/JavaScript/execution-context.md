@@ -2,7 +2,7 @@
 title: Demystifying Execution Context
 description: Demystifying Execution Context
 sidebar_label: "Execution Context"
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 At its core, Execution Context can be envisioned as the space or environment where a piece of JavaScript code is evaluated and executed. Understanding this concept is key to unraveling the intricacies of how JavaScript code operates.

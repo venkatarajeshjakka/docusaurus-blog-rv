@@ -2,7 +2,7 @@
 title: Exploring Advanced Promise APIs
 description: A Deep Dive into Promise API in Javascript
 sidebar_label: "Promise API"
-sidebar_position: 16
+sidebar_position: 17
 ---
 
 # Exploring Advanced Promise APIs: Beyond the Basics

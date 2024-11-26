@@ -2,7 +2,7 @@
 title: Understanding Scope, Lexical Environment, and the Scope Chain
 description: Understanding Scope, Lexical Environment, and the Scope Chain
 sidebar_label: "Lexical Environment"
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## Scope: The Containment of Variables
