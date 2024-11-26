@@ -2,7 +2,7 @@
 title: Asynchronous Javascript & Eventloop
 description: A Deep Dive into Asynchronous Javascript & Eventloop
 sidebar_label: "Eventloop"
-sidebar_position: 10
+sidebar_position: 11
 ---
 
 ## Call Stack: Tracking the Execution

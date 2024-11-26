@@ -2,7 +2,7 @@
 title: Callback Functions
 description: A Deep Dive into Callback in Javascript
 sidebar_label: "Callback Function"
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 ## Callback Functions: Unlocking Asynchronous Power

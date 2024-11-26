@@ -2,7 +2,7 @@
 title: Callback Hell
 description: A Deep Dive into Callback Hell in Javascript
 sidebar_label: "Callback Hell"
-sidebar_position: 14
+sidebar_position: 15
 ---
 
 Callback hell, also known as the "pyramid of doom" or "callback spaghetti," refers to a situation in JavaScript where multiple nested callbacks are used, leading to code that becomes difficult to read, understand, and maintain. This commonly occurs when dealing with asynchronous operations, such as making multiple API calls or handling deeply nested callbacks.

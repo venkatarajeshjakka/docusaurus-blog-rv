@@ -2,7 +2,7 @@
 title: Exploring let, const, and the Temporal Dead Zone
 description: Exploring let, const, and the Temporal Dead Zone in JavaScript
 sidebar_label: "Temporal Dead Zone"
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 JavaScript has evolved over the years, introducing new variable declaration keywords like `let` and `const` to enhance the language's functionality. We'll explore the nuances of `let` and `const`, and understand a phenomenon called the **Temporal Dead Zone (TDZ)**, which plays a crucial role in how these declarations work.

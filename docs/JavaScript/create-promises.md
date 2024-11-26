@@ -2,7 +2,7 @@
 title: Creating Promises
 description: A Deep Dive into Creating Promises in Javascript
 sidebar_label: "Creating Promises"
-sidebar_position: 16
+sidebar_position: 17
 ---
 
 A Promise is created using the `Promise` constructor, which takes a function with two parameters: `resolve` and `reject`. Inside this function, you perform the asynchronous operation.

@@ -2,7 +2,7 @@
 title: Clousers
 description: A Deep Dive into Lexical Scoping
 sidebar_label: "Clousers"
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 Closures are a powerful and often misunderstood feature in JavaScript that leverages lexical scoping to create functions with retained access to their outer scope variables.

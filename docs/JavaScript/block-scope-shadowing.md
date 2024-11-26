@@ -2,7 +2,7 @@
 title: Unraveling Block Scope and Shadowing
 description: Unraveling Block Scope and Shadowing in JavaScript
 sidebar_label: "Block Scope & Shadowing"
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 Block scope refers to the region within curly braces `{}` where variables are declared using `let` and `const`. Unlike `var`, which has function scope, variables declared with `let` and `const` are confined to the block they are defined in.

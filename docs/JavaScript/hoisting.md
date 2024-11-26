@@ -2,7 +2,7 @@
 title: Demystifying Hoisting
 description: Demystifying Hoisting
 sidebar_label: "Hoisting"
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during the compilation phase. This allows you to use functions and variables even before they are declared in your code.

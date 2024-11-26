@@ -2,7 +2,7 @@
 title: Higher-Order Function
 description: A Deep Dive into Higher-Order Function in Javascript
 sidebar_label: "Higher-Order Function"
-sidebar_position: 12
+sidebar_position: 13
 ---
 
 Higher Order Functions (HOFs) are functions that take other functions as arguments or return functions as results. They enable functional programming paradigms and are a powerful concept in JavaScript.
